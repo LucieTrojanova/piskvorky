@@ -3,8 +3,21 @@ body {
   background-attachment: fixed;
 }
 
+/*div - jako cely flex box*/
+
 .obrazek-plus-texty {
   display: flex;
+  flex-direction: column;
+  color: #ffffff;
+
+}
+
+.nadpis-text {
+  background-color: #283e50;
+}
+
+.uvodni-obrazek {
+  position: center;
 }
 
 h1 {
@@ -13,11 +26,12 @@ h1 {
   text-align: center;
 }
 
-.uvodni-obrazek {
-  position: center;
-}
-
-
 p {
   flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
+
+.pravidla {}
+
+.zacit-hrat {}
