@@ -10,13 +10,17 @@ body {
   flex-direction: column;
   color: #ffffff;
   text-align: center;
-  width: 350px;
+  width: 360px;
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 175px);
 
 
 }
 
 .nadpis-text {
   background-color: #283e50;
+  padding: 0 0 15px 0;
 }
 
 .uvodni-obrazek {
@@ -31,17 +35,19 @@ h1 {
 
 p {
   flex-wrap: wrap;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 0 10px;
+  line-height: 1.5;
 }
 
 .pravidla {
-
-
   background-color: #1fcca4;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-decoration-line: none;
+
+  padding: 20px 0;
 }
 
 .pravidla:hover {
@@ -53,9 +59,9 @@ p {
 .zacit-hrat {
   background-color: #0197f6;
   font-family: Arial, Helvetica, sans-serif;
-
   color: #ffffff;
   text-decoration-line: none;
+  padding: 20px 0;
 }
 
 .zacit-hrat:hover {
