@@ -1,10 +1,23 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
-  display: flex flex-wrap;
+  background-attachment: fixed;
+}
 
+.obrazek-plus-texty {
+  display: flex;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
+  font-size: 45px;
+  text-align: center;
+}
 
+.uvodni-obrazek {
+  position: center;
+}
+
+
+p {
+  flex-wrap: wrap;
 }
