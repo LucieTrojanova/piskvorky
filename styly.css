@@ -20,7 +20,7 @@ body {
 
 .nadpis-text {
   background-color: #283e50;
-  padding: 0 0 15px 0;
+  /*padding: 0 0 15px 0;*/
 }
 
 .uvodni-obrazek {
@@ -37,7 +37,8 @@ p {
   flex-wrap: wrap;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 10px 15px 10px;
+
   line-height: 1.5;
 }
 
