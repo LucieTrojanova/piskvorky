@@ -8,14 +8,12 @@ body {
 .obrazek-plus-texty {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  /*color: #ffffff;*/
   text-align: center;
   width: 360px;
   position: absolute;
   top: 50px;
   left: calc(50% - 360px/2);
-
-
 }
 
 .nadpis-text {
@@ -25,17 +23,19 @@ body {
 
 .uvodni-obrazek {
   position: center;
+  border-radius: 5px 5px 0px 0px;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 45px;
   text-align: center;
+  color: #ffffff;
 }
 
-p {
+.piskvorky-text {
   flex-wrap: wrap;
-  font-family: Arial, sans-serif;
+  /*font-family: Arial, sans-serif;*/
   text-align: center;
   padding: 0 10px 15px 10px;
 
@@ -67,4 +67,51 @@ p {
 
 .zacit-hrat:hover {
   background-color: #0090e9;
+}
+
+.domu-obrazek {
+  background-color: #1fcca4;
+  padding: 10px 8px 12px 8px;
+  border-radius: 5px;
+}
+
+.domu-obrazek:hover {
+  background-color: #1cbb96;
+}
+
+.restart-obrazek {
+  background-color: #0197f6;
+  padding: 10px 8px 12px 8px;
+  border-radius: 5px;
+}
+
+.restart-obrazek:hover {
+  background-color: #0090e9;
+}
+
+.text-hraje {
+  font-weight: bold;
+  /*color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;*/
+  font-size: 24px;
+}
+
+p {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.krouzek {
+
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 1px;
+  padding: 0px;
+}
+
+
+
+.ovladaci-tlacitka {
+  display: flex;
+
 }
