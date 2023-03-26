@@ -89,6 +89,7 @@ h1 {
   background-color: #0090e9;
 }
 
+
 .text-hraje {
   font-weight: bold;
   /*color: #ffffff;
@@ -111,7 +112,20 @@ p {
 
 
 
+.ikony-hry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hraje-krouzek {
+  display: flex;
+}
+
 .ovladaci-tlacitka {
   display: flex;
+}
 
+.sto-tlacitek {
+  display: flex;
+  max-width: 80vmin;
 }
