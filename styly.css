@@ -73,6 +73,7 @@ h1 {
   background-color: #1fcca4;
   padding: 10px 8px 12px 8px;
   border-radius: 5px;
+  margin-right: 10px;
 }
 
 .domu-obrazek:hover {
@@ -103,11 +104,11 @@ p {
 }
 
 .krouzek {
-
-  font-size: 60px;
-  font-family: 'Times New Roman', Times, serif;
-  height: 1px;
-  padding: 0px;
+  width: 0px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
 }
 
 
@@ -127,11 +128,30 @@ p {
 
 .sto-tlacitek {
   display: flex;
-  max-width: 80vmin;
+  /*max-width: 80vmin;*/
   flex-wrap: wrap;
+  border: 1px solid black;
+
+
+
 }
 
 button {
-  width: 50px;
-  height: 50px;
+  width: 10%;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+}
+
+.veliky-flex-box {
+  display: flex;
+  max-width: 80vmin;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: calc(80vmin);
+}
+
+.deset-tlacitek {
+  width: 100%;
 }
