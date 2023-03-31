@@ -99,7 +99,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;*/
   font-size: 24px;
   display: flex;
-  margin: 0px;
+  margin: 20px;
 }
 
 p {
@@ -108,13 +108,17 @@ p {
 }
 
 .krouzek {
-  width: 0px;
+  width: 20px;
   aspect-ratio: 1/1;
   border-radius: 10px;
   padding: 10px;
-  margin: 20px;
+  margin: 30px;
   display: flex;
-  border: solid 1px;
+  border: 1px solid white;
+  background-color: #ffffff;
+
+
+
 }
 
 .hraje-krouzek {
