@@ -115,13 +115,23 @@ p {
   display: flex;
   border: 3px solid white;
   border-radius: 50%;
-
 }
+
+.krizek {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  font-size: 36px;
+  margin: -5px 0 0 0;
+  display: none;
+}
+
 
 .hraje-krouzek {
   display: flex;
   margin-bottom: 10px;
 }
+
 
 .ikony-hry {
   display: flex;
@@ -155,7 +165,7 @@ button {
   aspect-ratio: 1/1;
   border: 1px solid black;
   background-color: rgb(191, 191, 191);
-
+  cursor: pointer;
 
 }
 

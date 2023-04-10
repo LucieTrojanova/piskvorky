@@ -1,13 +1,20 @@
 let currentPlayer = 'circle';
+const krouzek = document.querySelector('.krouzek');
+const krizek = document.querySelector('.krizek');
 
 const btnClick = (evt) => {
   if (currentPlayer == 'circle') {
     evt.target.classList.add('board__field--circle');
     currentPlayer = 'cross';
+    krizek.style.display = 'block';
+    krouzek.style.display = 'none';
   } else {
     evt.target.classList.add('board__field--cross');
     currentPlayer = 'circle';
+    krizek.style.display = 'none';
+    krouzek.style.display = 'block';
   }
+  evt.target.disabled = true;
 };
 
 const button1 = document.querySelector('#button1');
