@@ -1,3 +1,4 @@
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
 let currentPlayer = 'circle';
 const krouzek = document.querySelector('.krouzek');
 const krizek = document.querySelector('.krizek');
@@ -15,9 +16,26 @@ const btnClick = (evt) => {
     krouzek.style.display = 'block';
   }
   evt.target.disabled = true;
+
+  const allButtons = document.querySelectorAll('button');
+  let hraciPole = [];
+
+  allButtons.forEach((button) => {
+    if (button.classList.contains('board__field--circle')) {
+      hraciPole.push('o');
+    } else if (button.classList.contains('board__field--cross')) {
+      hraciPole.push('x');
+    } else {
+      hraciPole.push('_');
+    }
+  });
+  const vitez = findWinner(hraciPole);
+  if (vitez === 'o' || vitez === 'x') {
+    alert(`Vyhrál hráč se symbolem ${vitez}.`);
+  }
 };
 
-const button1 = document.querySelector('#button1');
+/*const button1 = document.querySelector('#button1');
 button1.addEventListener('click', btnClick);
 
 const button2 = document.querySelector('#button2');
@@ -45,4 +63,9 @@ const button9 = document.querySelector('#button9');
 button9.addEventListener('click', btnClick);
 
 const button10 = document.querySelector('#button10');
-button10.addEventListener('click', btnClick);
+button10.addEventListener('click', btnClick);*/
+
+const allBtn = document.querySelectorAll('button');
+allBtn.forEach((button) => {
+  button.addEventListener('click', btnClick);
+});
