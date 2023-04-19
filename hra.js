@@ -29,10 +29,18 @@ const btnClick = (evt) => {
       hraciPole.push('_');
     }
   });
-  const vitez = findWinner(hraciPole);
+
+  let vitez = findWinner(hraciPole);
   if (vitez === 'o' || vitez === 'x') {
-    alert(`Vyhrál hráč se symbolem ${vitez}.`);
+    const zpozdeni = () => {
+      alert(`Vyhrál hráč se symbolem ${vitez}.`);
+
+      location.reload();
+    };
+    setTimeout(zpozdeni, 100);
   }
+
+  console.log(hraciPole);
 };
 
 /*const button1 = document.querySelector('#button1');
