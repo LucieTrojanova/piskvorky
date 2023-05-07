@@ -38,6 +38,30 @@ const btnClick = (evt) => {
       location.reload();
     };
     setTimeout(zpozdeni, 100);
+    return;
+  }
+
+  if (currentPlayer === 'cross') {
+    const promise = fetch(
+      'https://piskvorky.czechitas-podklady.cz/api/suggest-next-move',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          board: hraciPole,
+          player: 'x',
+        }),
+      },
+    );
+    promise
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        const index = data.position.x + data.position.y * 10;
+        allBtn[index].click();
+      });
   }
 
   console.log(hraciPole);
